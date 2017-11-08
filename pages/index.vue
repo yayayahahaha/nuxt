@@ -11,6 +11,8 @@
 </style>
 
 <script>
+
+
     import axios from "axios";
     import matoi from "@/components/com_matoi";
 
@@ -24,7 +26,7 @@
                 },
                 headers: {
                     'Content-Type': 'application/json',
-                    'Accept':'application/json'
+                    'Accept': 'application/json'
                 }
             }).then(function(res) {
                 return {
@@ -44,22 +46,23 @@
             };
         },
         components: {
-        	matoi: matoi
+            matoi: matoi
         },
-		head: function() {
-			return {
-				title: 'custom title',
-				meta: [{
-					charset: 'utf-8'
-				}, {
-					name: 'viewport',
-					content: 'width=device-width, initial-scale=1'
-				}, {
-					hid: 'description',
-					name: 'description',
-					content: 'Meta description'
-				}]
-			}
-		}
+        head: function() {
+            return {
+                title: 'custom title',
+                meta: [{
+                    charset: 'utf-8'
+                }, {
+                    name: 'viewport',
+                    content: 'width=device-width, initial-scale=1'
+                }, {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Meta description'
+                }]
+            }
+        }
     }
+
 </script>
