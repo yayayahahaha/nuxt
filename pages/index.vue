@@ -16,7 +16,7 @@
         asyncData: function(context) {
             return axios({
                 method: 'get',
-                url: '/',
+                url: '/index',
                 data: {
                     key: "value"
                 },
@@ -38,6 +38,21 @@
             return {
                 msg: "Context Params"
             };
-        }
+        },
+		head: function() {
+			return {
+				title: 'custom title',
+				meta: [{
+					charset: 'utf-8'
+				}, {
+					name: 'viewport',
+					content: 'width=device-width, initial-scale=1'
+				}, {
+					hid: 'description',
+					name: 'description',
+					content: 'Meta description'
+				}]
+			}
+		}
     }
 </script>
