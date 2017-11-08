@@ -38,8 +38,7 @@
                 };
             });
         },
-        layout: 'default',
-        // layout: 'matoi',
+        layout: 'matoi',
         data: function() {
             return {
                 msg: "Context Params"
