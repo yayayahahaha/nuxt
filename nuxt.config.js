@@ -4,7 +4,7 @@ module.exports = {
 		vendor: ['axios', '~/plugins/another']
 	},
 
-	css: ['@/assets/css/style.css'],
+	css: ['@/assets/css/glob.css'],
 
 	// as library directory, I guess
 	// put global plugins here with ssr means client side only, (nodeJS plugin)
@@ -13,8 +13,8 @@ module.exports = {
 	// add it into head (see index.vue)
 	// but, have no idea why can't use axios as global variable
 	plugins: [{
-	    src:'lodash',
-	    ssr: false
+		src: 'lodash',
+		ssr: false
 	}],
 
 	head: {

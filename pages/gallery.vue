@@ -4,8 +4,8 @@
     </div>
 </template>
 
-<style scoped>
-    /* some scoped css */
+<style>
+    @import "assets/css/style.css";
 </style>
 
 <script>
