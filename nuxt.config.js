@@ -4,6 +4,8 @@ module.exports = {
 		vendor: ['axios', '~/plugins/another']
 	},
 
+	css: ['@/assets/css/style.css'],
+
 	// as library directory, I guess
 	// put global plugins here with ssr means client side only, (nodeJS plugin)
 	// then you could use function or variable in mounted function.
