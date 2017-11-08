@@ -17,6 +17,25 @@
     import matoi from "@/components/com_matoi";
 
     export default {
+        layout: 'matoi',
+        components: {
+            matoi: matoi
+        },
+        head: function() {
+            return {
+                title: 'custom title',
+                meta: [{
+                    charset: 'utf-8'
+                }, {
+                    name: 'viewport',
+                    content: 'width=device-width, initial-scale=1'
+                }, {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Meta description'
+                }]
+            }
+        },
         asyncData: function(context) {
             return axios({
                 method: 'get',
@@ -38,29 +57,16 @@
                 };
             });
         },
-        layout: 'matoi',
         data: function() {
             return {
                 msg: "Context Params"
             };
         },
-        components: {
-            matoi: matoi
+        created: function() {
+            console.log('inex.vue created!');
         },
-        head: function() {
-            return {
-                title: 'custom title',
-                meta: [{
-                    charset: 'utf-8'
-                }, {
-                    name: 'viewport',
-                    content: 'width=device-width, initial-scale=1'
-                }, {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'Meta description'
-                }]
-            }
+        mounted: function() {
+            console.log('index.vue mounted!');
         }
     }
 
