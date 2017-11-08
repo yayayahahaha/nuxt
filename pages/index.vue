@@ -2,6 +2,7 @@
     <div>
         <h1 v-text="msg"></h1>
         <p v-for="item in context" v-text='item'></p>
+        <matoi></matoi>
     </div>
 </template>
 
@@ -11,12 +12,13 @@
 
 <script>
     import axios from "axios";
+    import matoi from "@/components/com_matoi";
 
     export default {
         asyncData: function(context) {
             return axios({
                 method: 'get',
-                url: '/index',
+                url: 'https://www.google.com.tw',
                 data: {
                     key: "value"
                 },
@@ -40,6 +42,9 @@
             return {
                 msg: "Context Params"
             };
+        },
+        components: {
+        	matoi: matoi
         },
 		head: function() {
 			return {
