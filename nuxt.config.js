@@ -11,5 +11,6 @@ module.exports = {
 			name: 'description',
 			content: 'Meta description'
 		}]
-	}
+	},
+	layout: 'default'
 };
