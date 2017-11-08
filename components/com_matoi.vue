@@ -19,7 +19,10 @@
             };
         },
         created: function() {
-        	console.log('component loaded');
+        	console.log('component created');
+        },
+        mounted: function() {
+        	console.log('component mounted');
         }
     }
 </script>
