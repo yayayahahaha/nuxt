@@ -12,7 +12,6 @@
 
 <script>
 
-
     import axios from "axios";
     import matoi from "@/components/com_matoi";
 
@@ -21,9 +20,20 @@
         components: {
             matoi: matoi
         },
+        /*
+        // if wanna use original author code, put it here
+        plugins: [{
+            src:'~/plugins/another',
+            ssr: false
+        }],
+        */
         head: function() {
             return {
                 title: 'custom title',
+
+                // add javascript from static directory or external side
+                script: [{src: 'https://unpkg.com/axios/dist/axios.min.js'}],
+
                 meta: [{
                     charset: 'utf-8'
                 }, {
