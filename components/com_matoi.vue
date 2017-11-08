@@ -1,6 +1,7 @@
 <template>
     <div>
     	matoi rock!
+    	<img src="/images/static_1.png" alt="">
     </div>
 </template>
 
