@@ -1,4 +1,9 @@
 {
+	"config": {
+		"nuxt":{
+			"port":8888
+		}
+	},
 	"dependencies": {
 		"axios": "^0.17.0",
 		"lodash": "^4.17.4",
