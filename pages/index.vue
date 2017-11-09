@@ -20,13 +20,6 @@
         components: {
             matoi: matoi
         },
-        /*
-        // if wanna use original author code, put it here
-        plugins: [{
-            src:'~/plugins/another',
-            ssr: false
-        }],
-        */
         head: function() {
             return {
                 title: 'custom title',
