@@ -1,4 +1,7 @@
 module.exports = {
+	router: {
+		middleware: 'global_middleware'
+	},
 	build: {
 		// put original author code or third part code exclude library.
 		vendor: ['axios', '~/plugins/another']
