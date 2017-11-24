@@ -16,6 +16,7 @@
     import matoi from "@/components/com_matoi";
 
     export default {
+        middleware: 'middle_example',
         layout: 'matoi',
         components: {
             matoi: matoi
